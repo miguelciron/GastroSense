@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Sevillana&display=swap');
+
+@font-face {
+    font-family: 'fonte1';
+    src: url(fontes/Sevillana/Sevillana-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'fonte2';
+    src: url(fontes/Bebas_Neue/BebasNeue-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'fonte3';
+    src: url(fontes/Great_Vibes/GreatVibes-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #E5BC59;
+    --cor1: #FFA940;
+    --cor2: #B14E15;
+    --cor3: #701A0A;
+    --cor4: #57000F;
+
+    --fonte-padrao: "fonte2", Sans-serif;
+    --fonte-modelo1: "fonte1", Sans-serif;
+    --fonte-modelo2: "fonte3", Sans-serif;
+    --fonte-modelo3: Arial, Sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+}
+
+.imgtop{
+    height: 60px;
+    padding-bottom: 5px;
+}
+
+header {
+    color: #fff;
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    padding: 15px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.288);
+}
+
+nav > a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor0);
+    margin: 0px 11px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+
+.imggrande > img {
+    width: 100%;
+    filter: brightness(35%) blur(4px);
+}
+
+.imggrande > h1 {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    font-family: var(--fonte-modelo2);
+    text-align: center;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    top: 33%;
+    left: 5%;
+    width: 88%;
+}
+
+.conteudo1 {
+    padding: 50px;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+    font-family: var(--fonte-modelo3);
+    font-size: 1.4em;
+}
+
+.conteudo1 > h1 {
+    font-family: var(--fonte-modelo2);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.conteudo1 > ul {
+    font-family: var(--fonte-modelo3);
+    font-size: 1.1em;
+}
+
+.imginicial {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.imgbuttom1 {
+    margin: 20px;
+    border-radius: 10%;
+    height: 350px;
+}
+
+.imgbuttom1:hover {
+    height: 370px;
+    filter: brightness(60%) blur(1px);
+    transition-duration: 0.7s;
+}
+
+.imgbuttom2 {
+    margin: 20px;
+    border-radius: 10%;
+    height: 350px;
+}
+
+.imgbuttom2:hover {
+    height: 370px;
+    filter: brightness(60%) blur(1px);
+    transition-duration: 0.7s;
+}
+
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+}
+
+footer > h2 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: rgb(87, 87, 87);
+}
+
+footer > h1 {
+    color: #fff;
+    align-items: left;
+    justify-content: center;
+    padding: 0px 0px 0px 300px;
+}
+
+.navfooter {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 20px 100px 0px 0px;
+}
+
+.navfooter > a {
+    padding: 10px;
+}
+
+
+/*----------------------Página de receitas salgadas-----------------------*/
+
+.conteudo2 {
+    background-color: white;
+    margin: 50px;
+    margin-right: 700px;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 5px 7px 4px 3px rgba(0, 0, 0, 0.411);
+}
+
+.conteudo2 > figure > img {
+    margin: 40px;
+    border-radius: 15px;
+    border: #701A0A solid 5px;
+}
+
+.conteudo2 > ul > li{
+ margin: 5px;
+}
+
+.conteudo2 > ol > li{
+    margin: 5px;
+   }
+
+/*----------------------Página de receitas doces-----------------------*/
+
+.titulop2 {
+    font-family: var(--fonte-modelo2);
+    color: #fff;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 50px;
+    font-weight: bolder;
+    margin-bottom: 100px;
+}
+
+/*----------------------Página Sobre-----------------------*/
+
+.conteudo3 {
+    padding: 50px;
+    margin-bottom: 10rem;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+    font-family: var(--fonte-modelo3);
+    font-size: 1.4em;
+}
+
+.conteudo3 > h2 {
+    color: #fff;
+    font-family: var(--fonte-modelo2);
+    text-align: center;
+    margin: 50px;
+    font-size: 3em;
+    padding: 20px;
+
+}
+
+.conteudo3 > div {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0.9px 1.8px 2.7px rgba(0, 0, 0, 0.022),
+    1.6px 3.4px 6.9px rgba(0, 0, 0, 0.031),
+    2.5px 5.3px 14.2px rgba(0, 0, 0, 0.039),
+    4.3px 9.2px 29.2px rgba(0, 0, 0, 0.048),
+    15px 32px 80px rgba(0, 0, 0, 0.07);
+}
+
+.conteudo3 > div > p {
+    color: #fff;
+    padding: 15px;
+    font-size: 1.1em;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+/*----------------------Página Sobre-----------------------*/
+
+.conteudo4 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    min-width: 100wh;
+}
+
+
+.conteudo4 > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 45px;
+    width: 500px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.forms > label {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 2px 3px;
+}
+
+.forms > input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.forms > input:focus {
+    border-radius: 25px;
+}
+
+.forms > textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.forms > textarea:focus {
+    border-radius: 25px;
+}
+
+.forms button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #fff ;
+    color: #fff;
+    transition: all 1s;
+}
+
+.forms button:hover {
+    background-color: #fff;
+    color: var(--cor4);
+    border: 2px solid var(--cor4) ;
+    border-radius: 16px;
+}
+
+.img2 {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.img2 > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 0px 120px;
+}
