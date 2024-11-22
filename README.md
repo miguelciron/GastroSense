@@ -1,2 +1,2 @@
 # GastroSense
- Web-site desenvolvido com tema gastronomia
+ Website desenvolvido com tema gastronomia
